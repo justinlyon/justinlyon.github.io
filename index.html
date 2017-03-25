@@ -1,0 +1,68 @@
+<!DOCTYPE>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Justin Lyon - Web Developer</title>
+    <meta name="description" content="This is my github testing playground.">
+    <meta name="author" content="Justin Lyon">
+    <meta name="keywords" content="css, sass, scss, ux, html, design, front-end development, web developer, mixin, code, development, user experience, ui, performance, best practises">
+    <meta property="og:title" content="Justin Lyon | Web developer">
+    <meta property="og:url" content="http://justinlyon.github.io/index.html">
+    <meta property="og:image" content="http://justinlyon.github.io/img/logo.png">
+    <meta property="og:description" content="This is my github testing playground.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="stylesheets/screen.css">
+
+  </head>
+
+  <body id="homepage">
+
+    <div class="block-left">
+      <div class="content">
+        <div class="main-info">
+          <a href="index.html" class="logo">Vangel Tzo</a>
+          <h2>
+            Hi! My name is Justin and I am a Java
+             &amp; web developer
+          </h2>
+          <ul>
+            <li><a href="https://github.com/justinlyon" class="icon-github" target="_blank">github</a></li>
+            <li><a href="https://twitter.com/LyonJustin" class="icon-twitter" target="_blank">twitter</a></li>
+          </ul>
+        </div>
+      </div>
+      <canvas></canvas>
+    </div>
+
+    <div class="block-right">
+      <a href="posts.html" title="posts" class="posts-menu-icon"></a>
+      <span class="posts-link">POSTS</span>
+      <a title="project" class="projects-menu-icon">
+        <span></span>
+      </a>
+      <span class="projects-link">PROJECTS</span>
+      <div class="content">
+        <div class="about-info">
+          <h1>About me</h1>
+          <p>
+            I have been in the development field since 1999 and have worked for major corporations as well as start-ups, non-profits, and as an independent contractor. Currently, I work as an independent contractor and teach others how to code.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script async src="js/canvas.js"></script>
+
+    <script>
+      $('.projects-menu-icon').click(function() {
+        $('html').toggleClass('no-scroll');
+        $(this).toggleClass('active');
+        $('.overlay').toggleClass('show');
+      });
+    </script>
+
+  </body>
+</html>
